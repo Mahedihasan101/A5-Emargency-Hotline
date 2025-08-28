@@ -24,7 +24,7 @@
   </head>
   <body class="max-w-[1920px] m-auto">
     <header>
-      <nav class="flex justify-between items-center w-11/12 mx-auto my-5">
+      <nav class="flex justify-between sm:flex-row items-center w-11/12 mx-auto my-5">
         <div class="flex items-center gap-2">
           <img src="./assets/logo.png " alt="" class="w-[50px]" />
           <h1 class="font-extrabold text-[#006747]">
@@ -49,7 +49,7 @@
             <h1
               class="font-medium text-white bg-[#00A63E] rounded-[50px] px-[20px] py-[5px]"
             >
-              <span id="Copy-Count">2</span> Copy
+              <span id="Copy-Count">0</span> Copy
             </h1>
           </div>
         </div>
@@ -72,7 +72,7 @@
         <div class="col-span-9">
           <div class="grid grid-cols-3 gap-7 my-10">
             <!-- card-1 -->
-            <div class="card bg-white rounded-[12px] p-[32px] shadow-md">
+             <div class="card bg-white rounded-[12px] p-[32px] shadow-md">
               <div class="flex justify-between items-center">
                 <div class="w-[60px]">
                   <img
@@ -83,9 +83,7 @@
                 </div>
                 <p><i class="fa-regular fa-heart loves"></i></p>
               </div>
-              <h1 class="font-bold text-[24px] mt-5">
-                National Emergency Number
-              </h1>
+              <h1 class="font-bold text-[24px] mt-5">National Emergency Number</h1>
               <p class="font-bold text-[#5c5c5c]">National Emergency</p>
               <h2 class="font-bold text-[32px] mt-5">999</h2>
               <p
@@ -101,7 +99,7 @@
                   Copy
                 </button>
                 <button
-                  class="btn text-white bg-[#00a63e] w-[50%] hover:bg-gray-300 rounded-lg"
+                  class="btn text-white bg-[#00a63e] w-[50%] hover:bg-gray-300 rounded-lg card-button"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -397,18 +395,21 @@
 
         <!-- aside section -->
         <aside
-          class="bg-white rounded-xl shadow-md col-span-3 ml-5 my-10 p-6 space-y-4" id="aside-container"
+          class="bg-white rounded-xl shadow-md col-span-3 ml-5 my-10 p-6 space-y-4"
         >
           <div class="flex justify-between items-center">
-            <h2><i class="fa-regular fa-clock"></i> Call History</h2>
+            <h2 id="call-history">
+              <i class="fa-regular fa-clock"></i> Call History
+            </h2>
             <button
               class="btn text-white bg-[#00a63e] px-9 py-4 hover:bg-gray-300 rounded-full"
+              id="clear-btn"
             >
               Clear
             </button>
           </div>
-      
 
+          <div id="aside-container" class="space-y-2"></div>
         </aside>
       </section>
     </main>

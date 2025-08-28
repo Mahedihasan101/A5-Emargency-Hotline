@@ -11,7 +11,7 @@ for (let love of loves) {
 };
 // Call button js....
 const cardButtons = document.getElementsByClassName('card-button');
-console.log(cardButtons)
+
 
 for (let cardButton of cardButtons) {
     cardButton.addEventListener("click", function () {
@@ -79,3 +79,12 @@ for (let CopyBtn of CopyBtns) {
     });
 
 };
+
+// clear button
+
+const clearButton = document.getElementById('clear-btn')
+clearButton.addEventListener('click', function(){
+    const asideContainer = document.getElementById('aside-container').style.display = 'none'
+
+})
+
